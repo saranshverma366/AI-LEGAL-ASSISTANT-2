@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Legal Assistant - India (BNS 2023)</title>
+<style>
+  :root{
+    --navy:#0f2942; --navy-2:#16354f; --gold:#c9a24b; --gold-2:#e0be6f;
+    --bg:#f4f1ea; --card:#ffffff; --ink:#1c2b3a; --muted:#5c6b7a; --border:#e2dfd6;
+    --danger:#a83232; --radius:10px;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;font-family:"Georgia","Times New Roman",serif;background:var(--bg);color:var(--ink);}
+  header{background:linear-gradient(135deg,var(--navy),var(--navy-2));color:#fff;padding:22px 28px;
+         display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;}
+  header h1{margin:0;font-size:22px;letter-spacing:.5px;}
+  header .scale{font-size:26px;margin-right:10px;}
+  header .badge{font-family:Arial,sans-serif;font-size:11px;background:rgba(255,255,255,.12);
+                 padding:5px 10px;border-radius:20px;border:1px solid rgba(255,255,255,.25);}
+  nav{display:flex;gap:6px;background:#fff;border-bottom:2px solid var(--gold);padding:0 20px;
+      overflow-x:auto;}
+  nav button{font-family:Arial,sans-serif;border:none;background:none;padding:14px 16px;
+             font-size:14px;cursor:pointer;color:var(--muted);border-bottom:3px solid transparent;
+             white-space:nowrap;}
+  nav button.active{color:var(--navy);border-bottom-color:var(--gold);font-weight:bold;}
+  main{max-width:900px;margin:0 auto;padding:24px 18px 60px;}
+  .tab{display:none;} .tab.active{display:block;animation:fade .25s ease;}
+  @keyframes fade{from{opacity:0;transform:translateY(4px);}to{opacity:1;transform:none;}}
+  .card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);
+        padding:20px;margin-bottom:16px;box-shadow:0 1px 3px rgba(15,41,66,.06);}
+  h2{font-size:19px;color:var(--navy);margin-top:0;border-bottom:1px solid var(--border);padding-bottom:8px;}
+  label{font-family:Arial,sans-serif;font-size:12.5px;color:var(--muted);display:block;margin:10px 0 4px;}
+  input,textarea,select{width:100%;padding:9px 11px;border:1px solid var(--border);border-radius:6px;
+        font-family:Arial,sans-serif;font-size:14px;background:#fcfbf8;}
+  textarea{min-height:80px;resize:vertical;}
+  .row{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+  @media(max-width:600px){.row{grid-template-columns:1fr;}}
+  button.primary{font-family:Arial,sans-serif;background:var(--navy);color:#fff;border:none;
+      padding:11px 20px;border-radius:6px;cursor:pointer;font-size:14.5px;font-weight:bold;
+      margin-top:14px;}
+  button.primary:hover{background:var(--navy-2);}
+  button.secondary{font-family:Arial,sans-serif;background:#fff;color:var(--navy);
+      border:1px solid var(--navy);padding:9px 16px;border-radius:6px;cursor:pointer;font-size:13.5px;
+      margin-top:8px;margin-right:8px;}
+  .result{border-left:4px solid var(--gold);padding:12px 14px;margin-top:12px;background:#fbf8f1;
+          border-radius:0 6px 6px 0;}
+  .result h3{margin:0 0 4px;font-size:16px;color:var(--navy);}
+  .conf{font-family:Arial,sans-serif;font-size:11px;color:#fff;background:var(--navy);
+        padding:2px 8px;border-radius:10px;margin-left:8px;}
+  .sec-chip{display:inline-block;font-family:Arial,sans-serif;font-size:11.5px;background:var(--navy);
+            color:#fff;padding:3px 9px;border-radius:12px;margin:3px 4px 0 0;cursor:pointer;}
+  .disclaimer{font-family:Arial,sans-serif;font-size:12px;color:var(--muted);background:#fff9ec;
+              border:1px dashed var(--gold);padding:10px 12px;border-radius:6px;margin-top:16px;}
+  .helpline{display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid var(--border);
+            font-family:Arial,sans-serif;font-size:14px;}
+  .helpline b{color:var(--navy);}
+  pre.fir{white-space:pre-wrap;font-family:"Courier New",monospace;font-size:12.5px;
+          background:#fcfbf8;border:1px solid var(--border);padding:16px;border-radius:6px;
+          max-height:480px;overflow:auto;}
+  .muted{color:var(--muted);font-family:Arial,sans-serif;font-size:13px;}
+  .search-row{display:flex;gap:8px;}
+  .search-row input{flex:1;}
+  .bns-item{padding:10px 0;border-bottom:1px solid var(--border);font-family:Arial,sans-serif;}
+  .bns-item .num{color:var(--gold-2);background:var(--navy);display:inline-block;padding:2px 8px;
+                 border-radius:5px;font-size:12px;margin-right:8px;}
+  footer{text-align:center;font-family:Arial,sans-serif;font-size:11.5px;color:var(--muted);padding:20px;}
+  .spinner{display:inline-block;width:14px;height:14px;border:2px solid #cbd5df;border-top-color:var(--navy);
+           border-radius:50%;animation:spin .7s linear infinite;vertical-align:middle;margin-right:6px;}
+  @keyframes spin{to{transform:rotate(360deg);}}
+</style>
+</head>
+<body>
+
+<header>
+  <div style="display:flex;align-items:center;">
+    <span class="scale">&#9878;</span>
+    <div>
+      <h1>AI Legal Assistant</h1>
+      <div style="font-family:Arial,sans-serif;font-size:12px;opacity:.85;">Bharatiya Nyaya Sanhita (BNS) 2023 &middot; India</div>
+    </div>
+  </div>
+  <span class="badge" id="backendBadge">loading model...</span>
+</header>
+
+<nav>
+  <button class="tab-btn active" data-tab="ask">Ask a Legal Question</button>
+  <button class="tab-btn" data-tab="bns">BNS Sections</button>
+  <button class="tab-btn" data-tab="dlsa">DLSA / Free Legal Aid</button>
+  <button class="tab-btn" data-tab="fir">FIR Builder</button>
+</nav>
+
+<main>
+
+  <!-- ASK TAB -->
+  <section class="tab active" id="tab-ask">
+    <div class="card">
+      <h2>Describe your legal issue in plain English</h2>
+      <textarea id="askInput" placeholder="e.g. My phone was snatched on the street yesterday and I don't know the person's name..."></textarea>
+      <button class="primary" onclick="askQuestion()">Get Legal Guidance</button>
+      <div id="askResults"></div>
+    </div>
+  </section>
+
+  <!-- BNS TAB -->
+  <section class="tab" id="tab-bns">
+    <div class="card">
+      <h2>Search Bharatiya Nyaya Sanhita (BNS) Sections</h2>
+      <div class="search-row">
+        <input id="bnsSearch" placeholder="Search by section number, offence, or old IPC number (e.g. 'theft', '420', '303')">
+        <button class="secondary" onclick="searchBns()">Search</button>
+      </div>
+      <div id="bnsResults"></div>
+    </div>
+  </section>
+
+  <!-- DLSA TAB -->
+  <section class="tab" id="tab-dlsa">
+    <div class="card">
+      <h2>Free Legal Aid Helplines</h2>
+      <div id="helplines">Loading...</div>
+    </div>
+    <div class="card">
+      <h2>District Legal Services Authority (DLSA) Locator</h2>
+      <div id="dlsaInfo">Loading...</div>
+    </div>
+  </section>
+
+  <!-- FIR BUILDER TAB -->
+  <section class="tab" id="tab-fir">
+    <div class="card">
+      <h2>FIR (First Information Report) Draft Builder</h2>
+      <p class="muted">This creates a personal draft to help you organise the facts before visiting the police station. It is not an official FIR.</p>
+
+      <label>Police Station</label><input id="fPS">
+      <div class="row">
+        <div><label>District</label><input id="fDistrict"></div>
+        <div><label>State</label><input id="fState"></div>
+      </div>
+
+      <h2 style="margin-top:20px;">Complainant Details</h2>
+      <div class="row">
+        <div><label>Full Name</label><input id="fName"></div>
+        <div><label>Father's / Husband's Name</label><input id="fRelName"></div>
+      </div>
+      <div class="row">
+        <div><label>Age</label><input id="fAge"></div>
+        <div><label>Gender</label>
+          <select id="fGender"><option>Female</option><option>Male</option><option>Other</option></select>
+        </div>
+      </div>
+      <label>Address</label><textarea id="fAddress"></textarea>
+      <div class="row">
+        <div><label>Phone Number</label><input id="fPhone"></div>
+        <div><label>ID Proof (type &amp; number)</label><input id="fId"></div>
+      </div>
+
+      <h2 style="margin-top:20px;">Incident Details</h2>
+      <div class="row">
+        <div><label>Date of Incident</label><input id="fDate" type="date"></div>
+        <div><label>Time of Incident</label><input id="fTime" type="time"></div>
+      </div>
+      <label>Place of Incident</label><input id="fPlace">
+      <label>Describe what happened (facts only, in order)</label>
+      <textarea id="fDesc" style="min-height:110px;"></textarea>
+
+      <h2 style="margin-top:20px;">Accused (if known)</h2>
+      <div class="row">
+        <div><label>Name(s)</label><input id="fAccusedName"></div>
+        <div><label>Relationship to you (if any)</label><input id="fAccusedRel"></div>
+      </div>
+      <label>Description / Address of accused (if known)</label><input id="fAccusedDesc">
+
+      <h2 style="margin-top:20px;">Property / Injury / Evidence</h2>
+      <label>Property lost or damaged (description &amp; value)</label><input id="fProperty">
+      <label>Injuries sustained (if any)</label><input id="fInjury">
+      <label>Witnesses (name, address, phone)</label><textarea id="fWitness"></textarea>
+      <label>Evidence available (photos, CCTV, medical report, etc.)</label><textarea id="fEvidence"></textarea>
+
+      <label>Suggested BNS sections to cite (comma-separated, optional — the Ask tab can suggest these)</label>
+      <input id="fSections" placeholder="e.g. 303, 351">
+
+      <div>
+        <button class="primary" onclick="generateFir()">Generate FIR Draft</button>
+        <button class="secondary" onclick="downloadFir()">Download as .txt</button>
+      </div>
+      <div id="firOutput"></div>
+    </div>
+  </section>
+
+  <div class="disclaimer">
+    <b>Disclaimer:</b> This assistant provides general legal information for educational purposes only.
+    It is not a substitute for advice from a licensed advocate. Always verify section numbers and
+    procedure with a qualified lawyer or the official Bare Act. For free legal aid, dial <b>15100</b>.
+  </div>
+</main>
+
+<footer>AI Legal Assistant &middot; Built on the Bharatiya Nyaya Sanhita, 2023 &middot; Not a law firm, not legal advice.</footer>
+
+<script>
+const API = "";
+
+// ---- Tab switching ----
+document.querySelectorAll(".tab-btn").forEach(btn=>{
+  btn.addEventListener("click", ()=>{
+    document.querySelectorAll(".tab-btn").forEach(b=>b.classList.remove("active"));
+    document.querySelectorAll(".tab").forEach(t=>t.classList.remove("active"));
+    btn.classList.add("active");
+    document.getElementById("tab-"+btn.dataset.tab).classList.add("active");
+  });
+});
+
+// ---- Status badge ----
+fetch(API+"/api/status").then(r=>r.json()).then(d=>{
+  const badge = document.getElementById("backendBadge");
+  badge.textContent = d.matcher_backend === "bert" ? "BERT model active" : "TF-IDF fallback active";
+}).catch(()=>{ document.getElementById("backendBadge").textContent = "offline"; });
+
+// ---- Ask tab ----
+async function askQuestion(){
+  const q = document.getElementById("askInput").value;
+  const box = document.getElementById("askResults");
+  if(!q.trim()){ box.innerHTML = "<p class='muted'>Please describe your issue first.</p>"; return; }
+  box.innerHTML = "<p class='muted'><span class='spinner'></span>Analysing your question...</p>";
+  try{
+    const res = await fetch(API+"/api/ask", {method:"POST", headers:{"Content-Type":"application/json"}, body: JSON.stringify({query:q})});
+    const data = await res.json();
+    if(data.error){ box.innerHTML = "<p class='muted'>"+data.error+"</p>"; return; }
+    if(!data.results.length){ box.innerHTML = "<p class='muted'>No matching guidance found. Try rephrasing, or call 15100 for direct help.</p>"; return; }
+    box.innerHTML = data.results.map(r=>{
+      const secs = (r.related_bns_sections||[]).map(s=>
+        `<span class="sec-chip" onclick="prefillFirSections('${s.section}')" title="${s.title}">BNS ${s.section} — ${s.title}</span>`
+      ).join("");
+      return `<div class="result">
+        <h3>${r.category} <span class="conf">${Math.round(r.confidence*100)}% match</span></h3>
+        <div style="white-space:pre-line;">${r.advice}</div>
+        <div style="margin-top:8px;">${secs}</div>
+      </div>`;
+    }).join("");
+  }catch(e){
+    box.innerHTML = "<p class='muted'>Something went wrong reaching the server.</p>";
+  }
+}
+
+function prefillFirSections(section){
+  const el = document.getElementById("fSections");
+  const existing = el.value.split(",").map(s=>s.trim()).filter(Boolean);
+  if(!existing.includes(section)) existing.push(section);
+  el.value = existing.join(", ");
+  document.querySelectorAll(".tab-btn").forEach(b=>b.classList.remove("active"));
+  document.querySelectorAll(".tab").forEach(t=>t.classList.remove("active"));
+  document.querySelector('[data-tab="fir"]').classList.add("active");
+  document.getElementById("tab-fir").classList.add("active");
+}
+
+// ---- BNS tab ----
+async function searchBns(){
+  const q = document.getElementById("bnsSearch").value;
+  const box = document.getElementById("bnsResults");
+  box.innerHTML = "<p class='muted'>Searching...</p>";
+  const res = await fetch(API+"/api/bns?q="+encodeURIComponent(q));
+  const data = await res.json();
+  renderBns(data.sections);
+}
+function renderBns(sections){
+  const box = document.getElementById("bnsResults");
+  if(!sections.length){ box.innerHTML="<p class='muted'>No sections found.</p>"; return; }
+  box.innerHTML = sections.map(s=>`
+    <div class="bns-item">
+      <span class="num">Sec ${s.section}</span><b>${s.title}</b>
+      <span class="muted"> (old IPC ${s.old_ipc})</span>
+      <div class="muted" style="margin-top:4px;">${s.description}</div>
+      <div style="margin-top:4px;"><b>Punishment:</b> ${s.punishment}</div>
+    </div>`).join("");
+}
+fetch(API+"/api/bns").then(r=>r.json()).then(d=>renderBns(d.sections.slice(0,8)));
+
+// ---- DLSA tab ----
+fetch(API+"/api/dlsa").then(r=>r.json()).then(d=>{
+  document.getElementById("helplines").innerHTML = d.national_helplines.map(h=>
+    `<div class="helpline"><span>${h.name} <span class="muted">(${h.notes})</span></span><b>${h.number}</b></div>`
+  ).join("");
+  document.getElementById("dlsaInfo").innerHTML = `
+    <p class="muted">${d.structure_note}</p>
+    <p><b>How to apply for free legal aid:</b></p>
+    <ol class="muted">${d.how_to_apply.map(x=>`<li>${x}</li>`).join("")}</ol>
+    <p><b>Verified sample entry</b></p>
+    <div class="bns-item">
+      <b>${d.sample_verified_entry.authority}</b><br>
+      <span class="muted">${d.sample_verified_entry.address}</span><br>
+      <span class="muted">Toll-free: ${d.sample_verified_entry.toll_free}</span>
+    </div>
+    <p class="muted" style="margin-top:8px;">${d.note_on_full_coverage}</p>
+  `;
+});
+
+// ---- FIR builder ----
+function collectFirForm(){
+  const sectionsRaw = document.getElementById("fSections").value;
+  const sections = sectionsRaw.split(",").map(s=>s.trim()).filter(Boolean);
+  return {
+    police_station: document.getElementById("fPS").value,
+    district: document.getElementById("fDistrict").value,
+    state: document.getElementById("fState").value,
+    complainant_name: document.getElementById("fName").value,
+    complainant_relative_name: document.getElementById("fRelName").value,
+    complainant_age: document.getElementById("fAge").value,
+    complainant_gender: document.getElementById("fGender").value,
+    complainant_address: document.getElementById("fAddress").value,
+    complainant_phone: document.getElementById("fPhone").value,
+    complainant_id: document.getElementById("fId").value,
+    incident_date: document.getElementById("fDate").value,
+    incident_time: document.getElementById("fTime").value,
+    incident_place: document.getElementById("fPlace").value,
+    incident_description: document.getElementById("fDesc").value,
+    accused_name: document.getElementById("fAccusedName").value,
+    accused_relationship: document.getElementById("fAccusedRel").value,
+    accused_description: document.getElementById("fAccusedDesc").value,
+    property_details: document.getElementById("fProperty").value,
+    injury_details: document.getElementById("fInjury").value,
+    witness_details: document.getElementById("fWitness").value,
+    evidence_details: document.getElementById("fEvidence").value,
+    suggested_bns_sections: sections,
+  };
+}
+
+async function generateFir(){
+  const box = document.getElementById("firOutput");
+  box.innerHTML = "<p class='muted'><span class='spinner'></span>Generating draft...</p>";
+  const res = await fetch(API+"/api/fir/generate", {method:"POST", headers:{"Content-Type":"application/json"}, body: JSON.stringify(collectFirForm())});
+  const data = await res.json();
+  box.innerHTML = `<pre class="fir">${data.fir_draft.replace(/</g,"&lt;")}</pre>`;
+}
+
+async function downloadFir(){
+  const res = await fetch(API+"/api/fir/download", {method:"POST", headers:{"Content-Type":"application/json"}, body: JSON.stringify(collectFirForm())});
+  const blob = await res.blob();
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url; a.download = "FIR_Draft.txt"; a.click();
+  URL.revokeObjectURL(url);
+}
+</script>
+</body>
+</html>
