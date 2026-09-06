@@ -1,0 +1,204 @@
+{
+  "meta": {
+    "name": "AI Legal Assistant Knowledge Base (India)",
+    "version": "1.0",
+    "law_basis": "Bharatiya Nyaya Sanhita (BNS) 2023 - in force from 1 July 2024, replacing the Indian Penal Code (IPC) 1860",
+    "last_reviewed": "2026-09-06",
+    "disclaimer": "This database is for general information and educational purposes only. It is NOT a substitute for advice from a licensed advocate. Section numbers, punishments and procedures can change with amendments and judicial interpretation - always verify with a lawyer or the official Bare Act before relying on this for a real case."
+  },
+
+  "bns_sections": [
+    {"section": "63", "old_ipc": "375/376 (part)", "chapter": "Of Sexual Offences", "title": "Rape - definition", "description": "Defines rape as sexual intercourse/penetration with a woman without her voluntary consent, under the circumstances listed in the section (force, fear, fraud, incapacity to consent, etc.).", "punishment": "See Section 64 for punishment."},
+    {"section": "64", "old_ipc": "376", "chapter": "Of Sexual Offences", "title": "Punishment for rape", "description": "Punishment for the offence of rape as defined in Section 63.", "punishment": "Rigorous imprisonment not less than 10 years, may extend to life imprisonment, and fine. Enhanced punishment for aggravated categories (e.g. custodial rape, gang rape, rape of a minor)."},
+    {"section": "74", "old_ipc": "354", "chapter": "Of Sexual Offences", "title": "Assault or criminal force to woman with intent to outrage her modesty", "description": "Assault or use of criminal force on a woman intending to, or knowing it is likely to, outrage her modesty.", "punishment": "Imprisonment of 1 to 5 years and fine."},
+    {"section": "75", "old_ipc": "354A", "chapter": "Of Sexual Offences", "title": "Sexual harassment", "description": "Physical contact with unwelcome sexual overtures, demand for sexual favours, showing pornography against a woman's will, or sexually coloured remarks.", "punishment": "Up to 3 years imprisonment, or fine, or both (varies by clause)."},
+    {"section": "76", "old_ipc": "354B", "chapter": "Of Sexual Offences", "title": "Assault or use of criminal force to woman with intent to disrobe", "description": "Assaulting or using criminal force to a woman, or abetting such act, with intent to disrobe or compel her to be naked.", "punishment": "Imprisonment of 3 to 7 years and fine."},
+    {"section": "77", "old_ipc": "354C", "chapter": "Of Sexual Offences", "title": "Voyeurism", "description": "Watching or capturing the image of a woman engaging in a private act without her consent, or disseminating such image.", "punishment": "1 to 3 years for first conviction (up to 7 years for subsequent conviction) and fine."},
+    {"section": "78", "old_ipc": "354D", "chapter": "Of Sexual Offences", "title": "Stalking", "description": "Following/contacting a woman despite clear disinterest, or monitoring her use of the internet/email/electronic communication.", "punishment": "Up to 3 years for first conviction, up to 5 years for subsequent conviction, and fine."},
+    {"section": "79", "old_ipc": "509", "chapter": "Of Sexual Offences", "title": "Word, gesture or act intended to insult the modesty of a woman", "description": "Uttering a word, making a gesture or sound, or exhibiting an object intending to insult a woman's modesty, or intruding on her privacy.", "punishment": "Up to 3 years imprisonment and fine."},
+    {"section": "80", "old_ipc": "304B", "chapter": "Of Offences Affecting the Human Body", "title": "Dowry death", "description": "Death of a woman by burns/bodily injury/unnatural circumstances within 7 years of marriage, where she was subjected to cruelty or harassment for dowry soon before death.", "punishment": "Minimum 7 years imprisonment, may extend to life imprisonment."},
+    {"section": "85", "old_ipc": "498A", "chapter": "Of Cruelty by Husband or Relatives of Husband", "title": "Cruelty by husband or his relatives", "description": "Subjecting a married woman to cruelty (physical/mental) by husband or his relatives, including harassment for dowry.", "punishment": "Up to 3 years imprisonment and fine. Cognizable, non-bailable, non-compoundable."},
+    {"section": "86", "old_ipc": "498A (Explanation)", "chapter": "Of Cruelty by Husband or Relatives of Husband", "title": "Meaning of 'cruelty'", "description": "Defines 'cruelty' for the purpose of Section 85 - wilful conduct likely to drive a woman to suicide/grave injury, or harassment to coerce dowry.", "punishment": "N/A - definition section."},
+    {"section": "103(1)", "old_ipc": "302", "chapter": "Of Offences Affecting the Human Body", "title": "Murder", "description": "Culpable homicide is murder when the act is done with intention to cause death, or intention to cause bodily injury the offender knows is likely to cause death.", "punishment": "Death or life imprisonment, and fine."},
+    {"section": "103(2)", "old_ipc": "New provision", "chapter": "Of Offences Affecting the Human Body", "title": "Murder by group of 5+ on grounds of identity", "description": "Aggravated murder committed by a group of five or more persons on grounds such as race, caste, community, sex, place of birth, language or personal belief.", "punishment": "Minimum 7 years, extendable to life imprisonment or death."},
+    {"section": "106", "old_ipc": "304A", "chapter": "Of Offences Affecting the Human Body", "title": "Causing death by negligence", "description": "Causing death by a rash or negligent act not amounting to culpable homicide (e.g. road accidents, medical negligence).", "punishment": "Up to 5 years imprisonment and fine (up to 10 years for certain hit-and-run cases under 106(2); registered medical practitioners capped at 2 years for medical negligence)."},
+    {"section": "108", "old_ipc": "306", "chapter": "Of Offences Affecting the Human Body", "title": "Abetment of suicide", "description": "Instigating, conspiring with, or intentionally aiding a person who then commits suicide.", "punishment": "Up to 10 years imprisonment and fine."},
+    {"section": "109", "old_ipc": "307", "chapter": "Of Offences Affecting the Human Body", "title": "Attempt to murder", "description": "Doing an act with the intention/knowledge required for murder, under circumstances such that if death resulted the person would be guilty of murder, but death does not occur.", "punishment": "Up to life imprisonment or up to 10 years imprisonment, and fine."},
+    {"section": "114", "old_ipc": "319", "chapter": "Of Hurt", "title": "Hurt", "description": "Whoever causes bodily pain, disease or infirmity to any person is said to cause hurt.", "punishment": "Definition section - see Sections 115-118 for punishment."},
+    {"section": "115", "old_ipc": "323/321", "chapter": "Of Hurt", "title": "Voluntarily causing hurt", "description": "Intentionally or knowingly causing hurt to a person.", "punishment": "Up to 1 year imprisonment, or fine up to Rs. 10,000, or both."},
+    {"section": "116", "old_ipc": "320", "chapter": "Of Hurt", "title": "Grievous hurt", "description": "Defines categories of serious injury (emasculation, permanent loss of sight/hearing, fracture, disfiguration of face/head, etc.) that qualify as 'grievous'.", "punishment": "Definition section - see Section 117 for punishment."},
+    {"section": "117", "old_ipc": "325/322", "chapter": "Of Hurt", "title": "Voluntarily causing grievous hurt", "description": "Intentionally or knowingly causing grievous hurt as defined in Section 116.", "punishment": "Up to 7 years imprisonment and fine."},
+    {"section": "118", "old_ipc": "324/326", "chapter": "Of Hurt", "title": "Voluntarily causing hurt/grievous hurt by dangerous weapons or means", "description": "Causing hurt or grievous hurt using a weapon, fire, poison, corrosive substance, explosive, or any means likely to cause death.", "punishment": "Up to 3 years (simple hurt) or up to 10 years (grievous hurt) imprisonment and fine."},
+    {"section": "121", "old_ipc": "353", "chapter": "Of Offences Against Public Servants", "title": "Assault/criminal force to deter a public servant from duty", "description": "Assaulting or using criminal force against a public servant to prevent/deter discharge of official duty.", "punishment": "Up to 2 years imprisonment, or fine, or both (higher if grievous hurt caused)."},
+    {"section": "125", "old_ipc": "336/337/338", "chapter": "Of Hurt", "title": "Act endangering life or personal safety of others", "description": "Doing any act so rashly or negligently as to endanger human life or personal safety (with sub-clauses where hurt or grievous hurt actually results).", "punishment": "Up to 3 months (base act), up to 6 months (causing hurt), up to 2 years (causing grievous hurt), or fine, or both."},
+    {"section": "126", "old_ipc": "341", "chapter": "Of Wrongful Restraint and Wrongful Confinement", "title": "Wrongful restraint", "description": "Voluntarily obstructing a person so as to prevent that person from proceeding in a direction they have a right to proceed.", "punishment": "Up to 1 month imprisonment, or fine up to Rs. 5,000, or both."},
+    {"section": "129", "old_ipc": "350", "chapter": "Of Criminal Force and Assault", "title": "Criminal force", "description": "Intentionally using force on a person without consent, to cause injury, fear or annoyance.", "punishment": "Definition section - see Section 130 area for punishment of assault/criminal force."},
+    {"section": "130", "old_ipc": "351", "chapter": "Of Criminal Force and Assault", "title": "Assault", "description": "Making a gesture or preparation intending/knowing it is likely to cause a person to believe criminal force is about to be used against them.", "punishment": "Up to 3 months imprisonment, or fine up to Rs. 1,000, or both (higher for aggravated forms)."},
+    {"section": "137", "old_ipc": "359/363", "chapter": "Of Kidnapping, Abduction, Slavery and Forced Labour", "title": "Kidnapping", "description": "Kidnapping from India or from lawful guardianship (of a minor or person of unsound mind).", "punishment": "Up to 7 years imprisonment and fine."},
+    {"section": "138", "old_ipc": "362", "chapter": "Of Kidnapping, Abduction, Slavery and Forced Labour", "title": "Abduction", "description": "Compelling a person by force, or inducing by deceitful means, to go from any place.", "punishment": "Definition section - punishment depends on the purpose of abduction under related sections."},
+    {"section": "226", "old_ipc": "309", "chapter": "Of Offences Affecting the Human Body", "title": "Attempt to commit suicide (to compel/restrain a public servant)", "description": "Note: general attempt to suicide is decriminalised under BNS; Section 226 criminalises attempting suicide specifically to compel or restrain a public servant from discharging duty.", "punishment": "Up to 1 year imprisonment, or fine, or community service, or any two of these."},
+    {"section": "303", "old_ipc": "378/379", "chapter": "Of Theft", "title": "Theft", "description": "Dishonestly taking movable property out of another person's possession without consent.", "punishment": "Up to 3 years imprisonment, or fine, or both (higher for repeat offenders under 303(2))."},
+    {"section": "304", "old_ipc": "New offence", "chapter": "Of Theft", "title": "Snatching", "description": "Committing theft by suddenly/quickly/forcibly seizing property before the victim can resist (newly codified offence).", "punishment": "Up to 3 years imprisonment and fine."},
+    {"section": "305", "old_ipc": "380", "chapter": "Of Theft", "title": "Theft in a dwelling house / vehicle / place of worship etc.", "description": "Aggravated theft committed in a building used as a human dwelling, a means of transport, or place of worship.", "punishment": "Up to 7 years imprisonment and fine."},
+    {"section": "308", "old_ipc": "383/384", "chapter": "Of Extortion", "title": "Extortion", "description": "Intentionally putting a person in fear of injury and dishonestly inducing them to deliver property or valuable security.", "punishment": "Up to 7 years imprisonment, or fine, or both."},
+    {"section": "309", "old_ipc": "390/392", "chapter": "Of Robbery and Dacoity", "title": "Robbery", "description": "Theft or extortion becomes 'robbery' when the offender voluntarily causes/attempts to cause death, hurt or wrongful restraint, or fear of instant such harm.", "punishment": "Up to 10 years rigorous imprisonment and fine; minimum 7 years if committed on a highway between sunset and sunrise."},
+    {"section": "310", "old_ipc": "391/395", "chapter": "Of Robbery and Dacoity", "title": "Dacoity", "description": "Robbery is 'dacoity' when committed by five or more persons acting in concert.", "punishment": "Life imprisonment or rigorous imprisonment up to 10 years, and fine."},
+    {"section": "311", "old_ipc": "396/397", "chapter": "Of Robbery and Dacoity", "title": "Robbery/dacoity with attempt to cause death or grievous hurt", "description": "Where the offender, during robbery/dacoity, uses a deadly weapon, causes grievous hurt, or attempts to cause death/grievous hurt.", "punishment": "Minimum 7 years imprisonment (can extend to life)."},
+    {"section": "316", "old_ipc": "405/406", "chapter": "Of Criminal Breach of Trust", "title": "Criminal breach of trust", "description": "Dishonest misappropriation or conversion of property entrusted to a person, in violation of a legal contract or direction.", "punishment": "Up to 5 years imprisonment, or fine, or both (up to 10 years/life for aggravated categories like public servants, bankers, carriers)."},
+    {"section": "318", "old_ipc": "415/417/420", "chapter": "Of Cheating", "title": "Cheating / Cheating and dishonestly inducing delivery of property", "description": "Deceiving a person to induce them to deliver property, or to do/omit an act they would not otherwise do, causing damage or harm.", "punishment": "Up to 1 year (simple cheating, Sec 318(2)) or up to 7 years (cheating with property inducement, Sec 318(4)), and fine."},
+    {"section": "336", "old_ipc": "463/465", "chapter": "Of Forgery", "title": "Forgery", "description": "Making a false document or electronic record with intent to cause damage, to commit fraud, or to support a claim/title.", "punishment": "Up to 2 years imprisonment, or fine, or both (up to 7 years under Sec 336(3) if forgery is for the purpose of cheating)."},
+    {"section": "338", "old_ipc": "467", "chapter": "Of Forgery", "title": "Forgery of a valuable security, will, or authority to adopt", "description": "Forgery of documents representing property rights - e.g. cheques, demand drafts, mortgage deeds, powers of attorney.", "punishment": "Up to 7 years imprisonment (up to 10 years/life for public servants, bankers and similar persons) and fine."},
+    {"section": "351", "old_ipc": "503/506", "chapter": "Of Criminal Intimidation, Insult and Annoyance", "title": "Criminal intimidation", "description": "Threatening a person with injury to person, reputation or property (or to someone they care about) to cause alarm or to compel an act/omission.", "punishment": "Up to 2 years imprisonment, or fine, or both; up to 7 years for aggravated threats (death, grievous hurt, destruction by fire, etc.)."},
+    {"section": "356", "old_ipc": "499/500", "chapter": "Of Defamation", "title": "Defamation", "description": "Making or publishing an imputation concerning a person intending to harm, or knowing/having reason to believe it will harm, that person's reputation.", "punishment": "Up to 2 years simple imprisonment, or fine, or both, or community service."}
+  ],
+
+  "legal_advice": [
+    {
+      "id": "adv_theft",
+      "category": "Theft / Robbery / Snatching",
+      "title": "My phone/wallet was stolen or snatched",
+      "keywords": ["theft", "stolen", "phone stolen", "snatched", "chain snatching", "pickpocket", "burglary", "robbery"],
+      "advice": "1) Go to the police station having jurisdiction over the place of theft and lodge an FIR (theft/snatching are cognizable offences, so police must register it). 2) Carry ID proof, purchase invoice/IMEI number (for phones), and any CCTV footage you may have. 3) You are entitled to a free copy of the FIR. 4) If police refuse to register, you can send a written complaint to the Superintendent of Police under Section 173(4) BNSS, or approach the local Magistrate under Section 175(3) BNSS. 5) For lost/stolen phones, also block the IMEI on the CEIR portal (ceir.gov.in). 6) Applicable law: theft is BNS Section 303; snatching is BNS Section 304; theft with aggravating factors (dwelling house, vehicle) is BNS Section 305.",
+      "related_bns": ["303", "304", "305", "309", "310"]
+    },
+    {
+      "id": "adv_cheating_fraud",
+      "category": "Cheating / Fraud / Financial Scam",
+      "title": "I was cheated or defrauded (online or offline)",
+      "keywords": ["cheated", "fraud", "scam", "online fraud", "upi fraud", "loan app fraud", "investment scam", "fake job"],
+      "advice": "1) Preserve all evidence: chat/call logs, payment receipts, screenshots, bank statements. 2) For financial cyber fraud, call the National Cyber Crime Helpline 1930 immediately (faster chance of freezing/reversing the transaction) or report at cybercrime.gov.in. 3) Also file an FIR at the local police station or cyber cell. 4) Applicable law: cheating is BNS Section 318; if a forged document was used, BNS Sections 336/338 may also apply; criminal breach of trust (misuse of money entrusted to someone) is BNS Section 316.",
+      "related_bns": ["318", "316", "336", "338"]
+    },
+    {
+      "id": "adv_assault_hurt",
+      "category": "Assault / Physical Hurt",
+      "title": "I was assaulted or physically hurt",
+      "keywords": ["assault", "beaten", "hurt", "hit me", "injured", "grievous hurt", "attacked"],
+      "advice": "1) Get a Medico-Legal Certificate (MLC) from a government hospital immediately - this is critical evidence. 2) Lodge an FIR at the police station with jurisdiction. 3) Note down witness names and contact details. 4) If the injury is serious (fracture, permanent damage, danger to life), it may qualify as 'grievous hurt' which carries a heavier punishment. 5) Applicable law: simple hurt is BNS Section 115; grievous hurt is BNS Section 117; hurt caused by a weapon is BNS Section 118; assault (without actual injury) is BNS Section 130.",
+      "related_bns": ["114", "115", "116", "117", "118", "130"]
+    },
+    {
+      "id": "adv_domestic_violence",
+      "category": "Domestic Violence / Cruelty by Husband or In-laws",
+      "title": "I am facing domestic violence or cruelty from my husband/in-laws",
+      "keywords": ["domestic violence", "husband beats me", "in-laws harassment", "dowry harassment", "498a", "cruelty", "matrimonial dispute"],
+      "advice": "1) Your safety comes first - if you are in immediate danger, call Police 112 or the Women Helpline 181. 2) You can file a criminal complaint under BNS Sections 85/86 (cruelty by husband/relatives) at a police station, AND/OR a civil application under the Protection of Women from Domestic Violence Act, 2005 (for protection orders, residence orders, maintenance) through a Protection Officer or directly in the Magistrate's court. 3) If dowry is involved, the Dowry Prohibition Act, 1961 and BNS Section 80 (dowry death, if applicable) may also apply. 4) Free legal aid and counselling are available through your District Legal Services Authority (DLSA) - dial 15100. 5) Keep a record of incidents, messages, medical reports and witnesses.",
+      "related_bns": ["85", "86", "80"]
+    },
+    {
+      "id": "adv_sexual_harassment",
+      "category": "Sexual Harassment / Stalking / Molestation",
+      "title": "I am being sexually harassed, stalked, or molested",
+      "keywords": ["sexual harassment", "molested", "stalking", "eve teasing", "inappropriate touch", "obscene messages", "workplace harassment"],
+      "advice": "1) Your safety first: move to a public/safe place and call Police 112 or Women Helpline 181 if in danger. 2) File an FIR - these are cognizable offences and police cannot refuse to register a complaint by a woman victim. 3) At the workplace, you can additionally file a complaint with the Internal Complaints Committee (ICC) under the POSH Act, 2013. 4) Preserve messages/call records/CCTV as evidence. 5) Applicable law: outraging modesty is BNS Section 74; sexual harassment is BNS Section 75; stalking is BNS Section 78; insulting a woman's modesty by word/gesture is BNS Section 79.",
+      "related_bns": ["74", "75", "76", "77", "78", "79"]
+    },
+    {
+      "id": "adv_rape_sexual_assault",
+      "category": "Rape / Sexual Assault (Serious)",
+      "title": "I or someone I know has been raped or sexually assaulted",
+      "keywords": ["rape", "sexual assault", "raped", "sexually assaulted"],
+      "advice": "This is a medical and legal emergency. 1) Go to the nearest hospital (government hospitals must provide free treatment) for immediate medical care and forensic examination - try not to bathe or change clothes beforehand if possible, as this preserves evidence, but medical care always comes first. 2) Call Police 112 or Women Helpline 181, or go to the nearest police station; you also have the right to record your statement with a woman police officer, in privacy. 3) FIR registration is mandatory and free - police cannot refuse. 4) You are entitled to free legal aid through DLSA (dial 15100) and, in many states, victim compensation under the Victim Compensation Scheme. 5) Applicable law: BNS Section 63 (definition) and Section 64 (punishment - minimum 10 years, up to life imprisonment).",
+      "related_bns": ["63", "64"]
+    },
+    {
+      "id": "adv_cybercrime",
+      "category": "Cybercrime",
+      "title": "I am a victim of cybercrime (hacking, blackmail, fake profile, deepfake, OTP fraud)",
+      "keywords": ["cybercrime", "hacked", "blackmail", "sextortion", "fake profile", "otp fraud", "deepfake", "phishing"],
+      "advice": "1) Immediately call the National Cyber Crime Helpline 1930 or report online at cybercrime.gov.in - quick reporting (within a few hours) increases the chance of freezing fraudulent transactions. 2) Do NOT delete any evidence - screenshot everything before it can be removed. 3) Change your passwords and enable two-factor authentication. 4) For sextortion/blackmail, do not pay - report immediately; paying rarely stops the harassment. 5) You can also file a regular FIR at your local police station or cyber cell.",
+      "related_bns": ["318", "336", "351", "77"]
+    },
+    {
+      "id": "adv_tenant_landlord",
+      "category": "Tenant / Landlord Dispute",
+      "title": "My landlord is not returning my deposit or is illegally evicting me",
+      "keywords": ["landlord", "tenant", "rent dispute", "eviction", "security deposit"],
+      "advice": "1) Check your rent/lease agreement and your state's Rent Control Act or Model Tenancy Act provisions. 2) A landlord generally cannot evict a tenant without following due legal process (notice + court/Rent Authority order) - forcible eviction ('self-help eviction') can attract criminal liability. 3) Send a written legal notice demanding the deposit refund with a reasonable deadline. 4) If unresolved, you can approach the Rent Authority (where the Model Tenancy Act applies) or file a civil suit for recovery. 5) Free consultation is available at your District Legal Services Authority.",
+      "related_bns": []
+    },
+    {
+      "id": "adv_consumer",
+      "category": "Consumer Rights",
+      "title": "I bought a defective product or was denied a refund/service",
+      "keywords": ["consumer complaint", "defective product", "refund denied", "deficient service", "warranty"],
+      "advice": "1) First send a written complaint to the seller/company and keep proof of purchase (bill, warranty card, communication). 2) If unresolved, file a complaint on the National Consumer Helpline (1915 / consumerhelpline.gov.in) or e-Daakhil portal (edaakhil.nic.in) for the Consumer Commission (District/State/National, depending on claim value). 3) No court fee is required for claims up to certain limits, and you can file without a lawyer. 4) Keep timelines in mind - complaints should generally be filed within 2 years of the cause of action.",
+      "related_bns": []
+    },
+    {
+      "id": "adv_employment",
+      "category": "Employment / Wage Dispute",
+      "title": "My employer has not paid my salary or terminated me unfairly",
+      "keywords": ["salary not paid", "unpaid wages", "wrongful termination", "employer dispute", "notice pay"],
+      "advice": "1) Send a written representation to your employer/HR demanding dues, keeping a copy. 2) You can file a complaint with the local Labour Commissioner's office / Payment of Wages Authority. 3) For unfair termination, check applicability of the Industrial Disputes Act, 1947 (for 'workmen') and raise a dispute through the Labour Department or Industrial Tribunal. 4) Keep your appointment letter, salary slips, and termination communication as evidence. 5) Free legal aid for labour disputes is available through DLSA.",
+      "related_bns": []
+    },
+    {
+      "id": "adv_motor_accident",
+      "category": "Motor Vehicle Accident",
+      "title": "I was injured in a road accident / hit-and-run",
+      "keywords": ["road accident", "hit and run", "motor accident", "car accident", "bike accident"],
+      "advice": "1) File an FIR immediately - this is essential for insurance and compensation claims. 2) Get medical treatment and preserve all medical bills/records. 3) You can file a claim before the Motor Accident Claims Tribunal (MACT) for compensation, even for hit-and-run cases (via the Solatium Fund Scheme). 4) Applicable law: rash/negligent driving causing death is BNS Section 106 (with enhanced punishment up to 10 years for certain hit-and-run cases under Section 106(2)); causing hurt by a rash act is BNS Section 125.",
+      "related_bns": ["106", "125"]
+    },
+    {
+      "id": "adv_criminal_intimidation",
+      "category": "Threats / Criminal Intimidation",
+      "title": "Someone is threatening me or my family",
+      "keywords": ["threatened", "threat to kill", "criminal intimidation", "blackmail threat", "extortion threat"],
+      "advice": "1) Save all messages/call recordings/witnesses of the threat. 2) File an FIR - criminal intimidation is a cognizable offence when the threat is to cause death or grievous hurt. 3) If money or property is demanded under threat, this may also amount to extortion. 4) Applicable law: criminal intimidation is BNS Section 351 (up to 7 years for threats of death/grievous hurt/destruction by fire); extortion is BNS Section 308.",
+      "related_bns": ["351", "308"]
+    },
+    {
+      "id": "adv_missing_kidnapping",
+      "category": "Missing Person / Kidnapping",
+      "title": "A family member is missing or has been kidnapped",
+      "keywords": ["missing person", "kidnapped", "abducted", "child missing"],
+      "advice": "1) File an FIR immediately - do NOT wait 24 hours, that is a myth; police must register a missing person report right away, especially for a missing child. 2) Provide a recent photograph, description, and any information about last known location/contacts. 3) You can also inform the Childline (1098) if a minor is missing. 4) Applicable law: kidnapping is BNS Section 137; abduction is BNS Section 138 (punishment depends on the purpose of abduction).",
+      "related_bns": ["137", "138"]
+    },
+    {
+      "id": "adv_defamation",
+      "category": "Defamation",
+      "title": "Someone is spreading false statements that damage my reputation",
+      "keywords": ["defamation", "false rumours", "character assassination", "slander", "libel"],
+      "advice": "1) Preserve evidence of the defamatory statement (screenshots, recordings, witnesses). 2) Defamation can be pursued as a criminal complaint (before a Magistrate, since it is usually non-cognizable, so police may not register an FIR directly - you may need a private complaint) or as a civil suit for damages. 3) Send a legal notice first, demanding retraction/apology, which often resolves the matter. 4) Applicable law: BNS Section 356.",
+      "related_bns": ["356"]
+    },
+    {
+      "id": "adv_property_dispute",
+      "category": "Property Dispute",
+      "title": "I have a dispute over property/land ownership or possession",
+      "keywords": ["property dispute", "land dispute", "illegal possession", "property fraud", "partition"],
+      "advice": "1) Gather all title documents, sale deeds, mutation records, and encumbrance certificates. 2) For illegal dispossession, you may file a suit for recovery of possession (must generally be filed within the limitation period). 3) If a forged document was used, this may also be a criminal matter under forgery provisions. 4) Family property partition disputes can often be resolved faster through mediation or Lok Adalat. 5) Applicable law (if forgery/cheating involved): BNS Sections 316, 318, 336, 338.",
+      "related_bns": ["316", "318", "336", "338"]
+    }
+  ],
+
+  "dlsa_locator": {
+    "national_helplines": [
+      {"name": "NALSA Free Legal Aid Helpline", "number": "15100", "notes": "Toll-free. Connects you to your State/District Legal Services Authority based on your location. Available in 10 Indian languages, Mon-Fri 9:30am-6pm (IVRS may extend beyond this for call logging)."},
+      {"name": "National Cyber Crime Helpline", "number": "1930", "notes": "For financial cyber fraud - call immediately to increase chance of freezing the transaction. Also report at cybercrime.gov.in"},
+      {"name": "Police Emergency", "number": "112", "notes": "National single emergency number for police/fire/ambulance."},
+      {"name": "Women Helpline", "number": "181", "notes": "24x7 helpline for women in distress (domestic violence, harassment, etc.)."},
+      {"name": "Child Helpline", "number": "1098", "notes": "24x7 helpline for children in need of care and protection."},
+      {"name": "Senior Citizen Helpline", "number": "14567", "notes": "Elder Line - for elder abuse, pension, legal issues faced by senior citizens."}
+    ],
+    "structure_note": "Under the Legal Services Authorities Act, 1987: NALSA (national) -> SLSA (state level) -> DLSA (district level, at the District Court, chaired by the District & Sessions Judge) -> TLSC (taluka level). Free legal aid (advice, drafting, and a panel lawyer at no cost) is available to eligible categories such as women, children, SC/ST, persons with disability, industrial workmen, victims of trafficking or disaster, persons in custody, and anyone with annual income below the state-notified limit.",
+    "how_to_apply": [
+      "Dial 15100 and speak to a Panel Lawyer, who will guide you on next steps.",
+      "Walk in personally to the DLSA office located at your District Court complex.",
+      "Apply online via the NALSA Legal Services Management System (LSMS) portal at nalsa.gov.in.",
+      "You will receive a Diary Number to track your application status."
+    ],
+    "sample_verified_entry": {
+      "state": "Delhi",
+      "district": "New Delhi",
+      "authority": "New Delhi District Legal Services Authority (DLSA)",
+      "address": "Pre-Fabricated Building, Ground Floor, Patiala House Court Complex, New Delhi - 110001",
+      "toll_free": "15100",
+      "source": "dslsa.org"
+    },
+    "note_on_full_coverage": "India has 700+ districts, each with its own DLSA. This file ships with the verified national helplines and one confirmed sample entry (Delhi) to demonstrate the data shape. For full district-level coverage, extend this list from the official NALSA/SLSA websites (nalsa.gov.in and each state's SLSA site), or call 15100, which will connect you to the correct DLSA automatically based on your location."
+  }
+}
